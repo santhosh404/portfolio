@@ -127,7 +127,7 @@ const ProjectsSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: 'easeInOut' }}
-                    className="text-3xl font-bold mb-8 flex flex-col justify-center items-center mb-10"
+                    className="text-3xl font-bold mb-8 flex flex-col justify-center items-center"
                 >
                     Projects
                     <motion.button
