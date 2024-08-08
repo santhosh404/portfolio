@@ -37,14 +37,14 @@ const Navbar = () => {
 
                 <div
                     className={`${isOpen ? 'block' : 'hidden'
-                        } md:flex flex-col md:flex-row justify-center md:justify-between items-center`}
+                        } md:flex flex-col md:flex-row justify-center gap-5 md:justify-between items-center`}
                 >
                     <motion.button
                         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                         whileTap={{ scale: 0.9 }}
                         className="block md:inline-block"
                     >
-                        <a href="#about" className="text-white font-semibold hover:text-yellow-400 p-2">
+                        <a href="#aboutme" className="text-white font-semibold hover:text-yellow-400 p-2">
                             About Me
                         </a>
                     </motion.button>

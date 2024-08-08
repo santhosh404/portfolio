@@ -22,22 +22,22 @@ const ExperienceSection = () => {
                     Experience
                 </motion.h2>
                 <VerticalTimeline>
-                    {/* Timeline Item 1 */}
+                    {/* Timeline Item 3 */}
                     <VerticalTimelineElement
-                        date="March 2021 - May 2021"
+                        date="Apr 2024 - Present"
                         contentStyle={{ background: '#ffffff', color: '#333', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
                         contentArrowStyle={{ borderRight: '7px solid #ffffff' }}
                         iconStyle={{ background: '#ffb74d', color: '#fff' }}
                         icon={<FaBriefcase />}
                     >
                         <div className='flex gap-3 items-center'>
-                            <Avatar size={'lg'} />
+                            <Avatar size={'lg'} src={TechHiveLogo} />
                             <div className='flex flex-col gap-1'>
-                                <p className="text-md mt-[0px]">Software Development Intern</p>
-                                <small className='text-[10px] text-gray-400'>BestEnlist - Chennai, Tamil Nadu, India</small>
+                                <p className="text-md mt-[0px]">Front End Developer</p>
+                                <small className='text-[10px] text-gray-400'>TechHive Technology</small>
                                 <div className="flex space-x-2 mt-2">
                                     <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                        Internship
+                                        Freelance
                                     </span>
                                     <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
                                         Remote
@@ -46,28 +46,35 @@ const ExperienceSection = () => {
                             </div>
                         </div>
                         <p className="text-sm pt-6 text-justify">
-                            Gained hands-on experience in software development, contributing to various projects and learning key aspects of the software development lifecycle.
+                            Manage cab bookings, driver registrations, wallet recharges for drivers, customer and referral systems, and fare adjustments. Integrate charts for detailed summaries and ensure seamless communication between the Admin Dashboard, mobile applications, and the website.
                         </p>
                         <div>
-                            <div className="flex space-x-2 mt-2">
+                            <div className="flex flex-wrap gap-2 mt-2">
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    React JS
+                                    React.js
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    JavaScript
+                                    Ant Design
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    HTML
+                                    Express.js
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    CSS
+                                    PostgreSQL
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    Responsive Web Design
+                                    MUI
+                                </span>
+                                <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
+                                    REST APIs
+                                </span>
+                                <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
+                                    Tailwind CSS
                                 </span>
                             </div>
                         </div>
                     </VerticalTimelineElement>
+
 
                     {/* Timeline Item 2 */}
                     <VerticalTimelineElement
@@ -136,29 +143,27 @@ const ExperienceSection = () => {
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
                                     Mobile Application Development
                                 </span>
-                                <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    Progressive Web Applications (PWAs)
-                                </span>
+
                             </div>
                         </div>
                     </VerticalTimelineElement>
 
-                    {/* Timeline Item 3 */}
+                    {/* Timeline Item 1 */}
                     <VerticalTimelineElement
-                        date="Apr 2024 - Present"
+                        date="March 2021 - May 2021"
                         contentStyle={{ background: '#ffffff', color: '#333', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
                         contentArrowStyle={{ borderRight: '7px solid #ffffff' }}
                         iconStyle={{ background: '#ffb74d', color: '#fff' }}
                         icon={<FaBriefcase />}
                     >
                         <div className='flex gap-3 items-center'>
-                            <Avatar size={'lg'} src={TechHiveLogo} />
+                            <Avatar size={'lg'} name='Best Enlist' />
                             <div className='flex flex-col gap-1'>
-                                <p className="text-md mt-[0px]">Front End Developer</p>
-                                <small className='text-[10px] text-gray-400'>TechHive Technology</small>
+                                <p className="text-md mt-[0px]">Software Development Intern</p>
+                                <small className='text-[10px] text-gray-400'>BestEnlist - Chennai, Tamil Nadu, India</small>
                                 <div className="flex space-x-2 mt-2">
                                     <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                        Freelance
+                                        Internship
                                     </span>
                                     <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
                                         Remote
@@ -167,34 +172,29 @@ const ExperienceSection = () => {
                             </div>
                         </div>
                         <p className="text-sm pt-6 text-justify">
-                            Manage cab bookings, driver registrations, wallet recharges for drivers, customer and referral systems, and fare adjustments. Integrate charts for detailed summaries and ensure seamless communication between the Admin Dashboard, mobile applications, and the website.
+                            Gained hands-on experience in software development, contributing to various projects and learning key aspects of the software development lifecycle.
                         </p>
                         <div>
-                            <div className="flex flex-wrap gap-2 mt-2">
+                            <div className="flex flex-wrap space-x-2 mt-2">
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    React.js
+                                    React JS
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    Ant Design
+                                    JavaScript
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    Express.js
+                                    HTML
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    PostgreSQL
+                                    CSS
                                 </span>
                                 <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    MUI
-                                </span>
-                                <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    REST APIs
-                                </span>
-                                <span className="inline-block bg-gray-200 text-gray-800 py-1 px-2 rounded-full text-xs font-medium">
-                                    Tailwind CSS
+                                    Responsive Web Design
                                 </span>
                             </div>
                         </div>
                     </VerticalTimelineElement>
+
                 </VerticalTimeline>
             </div>
         </section>

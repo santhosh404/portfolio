@@ -9,7 +9,7 @@ const FooterSection = () => {
                 <p className="mb-4">Feel free to reach out to me via email or connect with me on social media!</p>
                 <div className="flex mt-10 justify-center mb-6">
                     <a
-                        href="https://www.linkedin.com/in/your-profile"
+                        href="https://www.linkedin.com/in/santhosh-annamalai-a32ba31a3/"
                         className="mx-3 text-blue-400 hover:text-blue-500"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const FooterSection = () => {
                         <FaLinkedin size={30} />
                     </a>
                     <a
-                        href="https://github.com/your-profile"
+                        href="https://github.com/santhosh404"
                         className="mx-3 text-gray-400 hover:text-gray-500"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -27,16 +27,7 @@ const FooterSection = () => {
                         <FaGithub size={30} />
                     </a>
                     <a
-                        href="https://twitter.com/your-profile"
-                        className="mx-3 text-blue-400 hover:text-blue-500"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Twitter"
-                    >
-                        <FaTwitter size={30} />
-                    </a>
-                    <a
-                        href="mailto:your-email@example.com"
+                        href="mailto:santhoshmathi2002@gmail.com"
                         className="mx-3 text-red-400 hover:text-red-500"
                         aria-label="Email"
                     >
@@ -44,7 +35,7 @@ const FooterSection = () => {
                     </a>
                 </div>
                 <p className="text-sm text-gray-400">
-                    &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+                    &copy; 2024 Santhosh Annamalai. All rights reserved.
                 </p>
             </div>
         </footer>
