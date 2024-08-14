@@ -29,11 +29,11 @@ const projectsData = [
         tag: "FSD"
     },
     {
-        title: 'COMING SOON...',
-        description: 'A brief description of Project 4.',
+        title: '#4 Event Management',
+        description: 'Event management app contains List of events where user can book events and view booked events and has admin to do all CRUD operations',
         link: '#',
-        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT"],
-        image: "https://plus.unsplash.com/premium_photo-1684761949804-fd8eb9a5b6cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhdCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
+        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Role based authentication", "AntDesign", "Tailwind CSS"],
+        image: "https://images.unsplash.com/photo-1653821355703-abbdc0b819bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGV2ZW50JTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D",
         tag: "FSD"
     },
     {
