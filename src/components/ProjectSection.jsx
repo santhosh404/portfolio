@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Filters } from './reusable/Filters';
 import { FaGithub } from 'react-icons/fa';
+import { Tooltip } from '@chakra-ui/react';
 
 const projectsData = [
     {
         title: '#1 Rental Stores for Market Place',
         description: 'This project is a rental equipment platform that allows users to view and book rental equipment, and owners to list their stores and manage rentals. The platform features secure payment processing, booking logs, and comprehensive user and admin interfaces.',
         link: 'https://rentit-store.netlify.app',
-        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "AWS-S3", "Formik"],
+        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "AWS-S3", "Formik", "React Tailwind", "Tailwind CSS"],
         image: "https://images.unsplash.com/photo-1505758480-67e8d1b6fcec?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         tag: "FSD"
     },
@@ -16,7 +17,7 @@ const projectsData = [
         title: '#2 React Expense App',
         description: "This project helps users manage and track daily expenses efficiently. It allows easy logging of daily expenses and provides a quick view of the current day's spending. Users can also analyze their overall expenses through date-wise analytics, making it easier to identify spending patterns and manage budgets effectively.",
         link: 'https://reactexpenses.onrender.com',
-        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Formik"],
+        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Formik", "Chakra UI"],
         image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXhwZW5zZXN8ZW58MHx8MHx8fDA%3D",
         tag: "FSD"
     },
@@ -24,7 +25,7 @@ const projectsData = [
         title: '#3 Chat App Using Websocket',
         description: 'The chat app is a real-time messaging platform that enables seamless communication between users. It features one-on-one chats, allowing users to share text messages, emojies. The user-friendly interface supports. Additionally, the app is designed to be responsive, working smoothly across mobile and web platforms, ensuring you can chat anytime, anywhere.',
         link: 'https://ping-kar.netlify.app',
-        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT"],
+        skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Tailwind CSS"],
         image: "https://plus.unsplash.com/premium_photo-1684761949804-fd8eb9a5b6cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhdCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
         tag: "FSD"
     },
@@ -166,7 +167,10 @@ const ProjectsSection = () => {
                             />
                             <div className='flex flex-col gap-3'>
                                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                                <p className="text-gray-700 mb-4 truncate-multiline text-justify">{project.description}</p>
+                                <Tooltip label={project.description}>
+
+                                    <p className="text-gray-700 mb-4 truncate-multiline text-justify">{project.description}</p>
+                                </Tooltip>
                                 <div className="my-4">
                                     {project?.skills.map((skill, skillIndex) => (
                                         <span
