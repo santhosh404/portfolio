@@ -24,7 +24,7 @@ const ExperienceSection = () => {
                 <VerticalTimeline>
                     {/* Timeline Item 3 */}
                     <VerticalTimelineElement
-                        date="Apr 2024 - Present"
+                        date="Apr 2024 - Jul 2024"
                         contentStyle={{ background: '#ffffff', color: '#333', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
                         contentArrowStyle={{ borderRight: '7px solid #ffffff' }}
                         iconStyle={{ background: '#ffb74d', color: '#fff' }}
