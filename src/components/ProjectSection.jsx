@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { m, motion } from 'framer-motion';
 import { Filters } from './reusable/Filters';
 import { FaGithub } from 'react-icons/fa';
 import { Tooltip } from '@chakra-ui/react';
@@ -11,7 +11,9 @@ const projectsData = [
         link: 'https://rentit-store.netlify.app',
         skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "AWS-S3", "Formik", "React Tailwind", "Tailwind CSS"],
         image: "https://images.unsplash.com/photo-1505758480-67e8d1b6fcec?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        tag: "FSD"
+        tag: "FSD",
+        frontendCode: "https://github.com/santhosh404/rentIt-frontend",
+        backendCode: "https://github.com/santhosh404/rentIt-backend"
     },
     {
         title: '#2 React Expense App',
@@ -19,7 +21,8 @@ const projectsData = [
         link: 'https://reactexpenses.onrender.com',
         skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Formik", "Chakra UI"],
         image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXhwZW5zZXN8ZW58MHx8MHx8fDA%3D",
-        tag: "FSD"
+        tag: "FSD",
+        code: "https://github.com/santhosh404/ReactExpense"
     },
     {
         title: '#3 Chat App Using Websocket',
@@ -27,7 +30,9 @@ const projectsData = [
         link: 'https://ping-kar.netlify.app',
         skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Tailwind CSS"],
         image: "https://plus.unsplash.com/premium_photo-1684761949804-fd8eb9a5b6cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhdCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
-        tag: "FSD"
+        tag: "FSD",
+        frontendCode: "https://github.com/santhosh404/chatapp-frontend",
+        backendCode: "https://github.com/santhosh404/chatapp-backend"
     },
     {
         title: '#4 Event Management',
@@ -35,7 +40,9 @@ const projectsData = [
         link: 'https://infinityeventsdotcom.netlify.app',
         skills: ["ReactJS", "ExpressJS", "MongoDB", "NodeJS", "JWT", "Role based authentication", "AntDesign", "Tailwind CSS"],
         image: "https://images.unsplash.com/photo-1653821355703-abbdc0b819bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGV2ZW50JTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D",
-        tag: "FSD"
+        tag: "FSD",
+        frontendCode: "https://github.com/santhosh404/event-management-frontend",
+        backendCode: "https://github.com/santhosh404/event-management-backend"
     },
     {
         title: 'Assign Mentor to Students and Vice-versa',
@@ -43,7 +50,8 @@ const projectsData = [
         link: 'https://documenter.getpostman.com/view/19527033/2sA3QwbpRW',
         skills: ["ExpressJS", "MongoDB", "NodeJS"],
         image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVudG9ycyUyMHN0dWRlbnRzfGVufDB8fDB8fHww",
-        tag: "Backend"
+        tag: "Backend",
+        code: "https://github.com/santhosh404/nodejs-assign-mentor-APIs"
     },
     {
         title: 'Hall Booking Based on Availability',
@@ -51,7 +59,8 @@ const projectsData = [
         link: 'https://documenter.getpostman.com/view/19527033/2sA3QsBYSU',
         skills: ["ExpressJS", "MongoDB", "NodeJS"],
         image: "https://media.istockphoto.com/id/1218436318/photo/close-up-shot-of-an-unrecognizable-man-holding-his-smart-phone-while-using-a-laptop.webp?b=1&s=170667a&w=0&k=20&c=D05fGngA9gdNAiXkqGviZq_Y88p8D8Q8JE5hdAVY1To=",
-        tag: "Backend"
+        tag: "Backend",
+        code: "https://github.com/santhosh404/nodejs-hall-booking-APIs"
     },
     {
         title: 'Working With File Systems',
@@ -59,7 +68,8 @@ const projectsData = [
         link: 'https://documenter.getpostman.com/view/19527033/2sA3Qqes9w',
         skills: ["ExpressJS", "MongoDB", "NodeJS", "fs"],
         image: "https://plus.unsplash.com/premium_photo-1677402408071-232d1c3c3787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmlsZSUyMHN5c3RlbXN8ZW58MHx8MHx8fDA%3D",
-        tag: "Backend"
+        tag: "Backend",
+        code: "https://github.com/santhosh404/nodejs-filesystem-APIs"
     },
     {
         title: 'Password Reset',
@@ -67,7 +77,8 @@ const projectsData = [
         link: 'https://documenter.getpostman.com/view/19527033/2sA3Qwbpj1',
         skills: ["ExpressJS", "MongoDB", "NodeJS", "fs"],
         image: "https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzZXQlMjBwYXNzd29yZHxlbnwwfHwwfHx8MA%3D%3D",
-        tag: "Backend"
+        tag: "Backend",
+        code: "https://github.com/santhosh404/password-reset-fsd"
     },
     {
         title: 'Library Management using ReactJS',
@@ -75,7 +86,8 @@ const projectsData = [
         link: 'https://formik-library-management-react.netlify.app/',
         skills: ["ReactJS", "Mock API", "Context API", "TailWind CSS", "Chakra UI", "formik"],
         image: "https://images.unsplash.com/photo-1700683533670-2a9eaf3206dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TGlicmFyeSUyME1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D",
-        tag: "Frontend"
+        tag: "Frontend",
+        code: "https://github.com/santhosh404/react-library-management-using-formik-validations"
     },
     {
         title: 'Shopping Cart using Redux',
@@ -83,7 +95,8 @@ const projectsData = [
         link: 'https://shoppingcart-redux-demo.netlify.app',
         skills: ["ReactJS", "Mock API", "react-redux", "redux-toolkit", "TailWind CSS", "Chakra UI"],
         image: "https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmclMjBjYXJ0fGVufDB8fDB8fHww",
-        tag: "Frontend"
+        tag: "Frontend",
+        code: "https://github.com/santhosh404/react-shopping-cart-using-redux"
     },
     {
         title: 'React Blog List',
@@ -91,7 +104,8 @@ const projectsData = [
         link: 'https://bloglist-demo.netlify.app/',
         skills: ["ReactJS", "react-router-dom", "TailWind CSS", "Chakra UI"],
         image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D",
-        tag: "Frontend"
+        tag: "Frontend",
+        code: "https://github.com/santhosh404/react-blog-list-using-react-router-dom"
     },
     {
         title: 'React Todo App',
@@ -99,7 +113,8 @@ const projectsData = [
         link: 'https://react-todo-demo.netlify.app/',
         skills: ["ReactJS", "TailWind CSS", "Chakra UI"],
         image: "https://plus.unsplash.com/premium_photo-1683262038148-2ac280407276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRvZG8lMjBhcHB8ZW58MHx8MHx8fDA%3D",
-        tag: "Frontend"
+        tag: "Frontend",
+        code: "https://github.com/santhosh404/react-todo-app"
     },
 ];
 
@@ -193,10 +208,61 @@ const ProjectsSection = () => {
                                         rel="noopener noreferrer"
                                     >
                                         {
-                                            project.tag === "Backend" ? "View API Docs" : "View"
+                                            project.tag === "Backend" ? "View API Docs" : "View website"
                                         }
                                     </a>
                                 </motion.button>
+                                {
+                                    project.frontendCode || project.backendCode ? (
+                                        <>
+                                            <motion.button
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.9 }}
+                                                className='w-full '
+                                            >
+                                                <a
+                                                    href={project.frontendCode}
+                                                    className="block w-full border-2 border-gray-800 bg-white px-6 py-3 text-gray-800 font-semibold rounded-4xl hover:bg-gray-700 hover:text-white"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    View frontend code
+                                                </a>
+                                            </motion.button>
+                                            <motion.button
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.9 }}
+                                                className='w-full '
+                                            >
+                                                <a
+                                                    href={project.backendCode}
+                                                    className="block w-full border-2 border-gray-800 bg-white px-6 py-3 text-gray-800 font-semibold rounded-4xl hover:bg-gray-700 hover:text-white"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                   View backend code
+                                                </a>
+                                            </motion.button>
+                                        </>
+
+                                    ) : (
+                                        <motion.button
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            className='w-full '
+                                        >
+                                            <a
+                                                href={project.code}
+                                                className="block w-full border-2 border-gray-800 bg-white px-6 py-3 text-gray-800 font-semibold rounded-4xl hover:bg-gray-700 hover:text-white"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                               View code
+                                            </a>
+                                        </motion.button>
+                                    )
+                                }
+                                
                             </div>
 
                         </motion.div>

@@ -21,7 +21,7 @@ const HeroSection = () => {
                 transition={{ duration: 1, ease: 'easeInOut' }}
                 className="mb-6"
             >
-                <h1 className="text-5xl font-bold mb-2">
+                <h1 className="text-5xl font-bold mb-2 font-['Roboto_Mono']">
                     {'<Santhosh Annamalai />'}
                 </h1>
                 <h2 className="text-2xl font-semibold mb-4">
@@ -37,7 +37,7 @@ const HeroSection = () => {
                     <a href="https://github.com/santhosh404" target="_blank" rel="noopener noreferrer" className="text-4xl hover:text-yellow-400">
                         <FaGithub className='w-6 h-6' />
                     </a>
-                    <a href="https://drive.google.com/file/d/1r9ax_HeJS-KDN4h9DO5tItqzO8wanN2a/view?usp=sharing" download className="flex items-center text-2xl hover:text-yellow-400">
+                    <a href="https://drive.google.com/file/d/17gs3LgwyVKzLwmFD99lWyMd6_eDfz_6I/view?usp=sharing" target='_blank' className="flex items-center text-2xl hover:text-yellow-400">
                         <AiOutlineDownload className='w-6 h-6' />
                     </a>
                 </div>
