@@ -1,8 +1,19 @@
-# React + Vite
+# Santhosh Annamalai — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio built with Next.js, set in Instrument Serif and Inter.
 
-Currently, two official plugins are available:
+## Edit content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Everything shown on the site lives in `src/data/profile.ts`.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+Pushing to `main` builds a static export and publishes it to GitHub Pages
+(Settings → Pages → Source: **GitHub Actions**).
